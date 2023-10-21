@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    width: 40rem;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "header header" "side main" "footer footer";
+    background-color: black;
+    padding: 2px;
+    gap: 2px;
+
+
+}
+
+.grid section {
+    height: 30rem;
+    background-color: white;
+} 
+
+.grid .header {
+    height: 3rem;
+    grid-area: header;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.grid .side {
+   grid-template-columns: 80px;
+    grid-area: side;
+   
+}
+
+.grid .main{
+  grid-area: main;
+  grid-template-columns: 1fr;
+  text-align: center;
+  text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.grid .footer {
+    height: 3rem;
+    grid-area: footer;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
